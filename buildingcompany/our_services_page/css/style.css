@@ -1,0 +1,96 @@
+:root {
+    --dark: #292929;
+    --dark-opacity: rgba(41, 41, 41, 0.95);
+    --font-dark: #1f1f1f;
+    --ligth-gray: #dddddd;
+    --dark-gray: #767676;
+
+    --angle: 3.43363deg;
+    /* tan(--angle°) = 100vw / 6vw */
+    ;
+    --magic-number: 0.06;
+    /* tan(--angle°)/2 */
+    --content-width: 1100px;
+    --skew-padding: calc(var(--content-width) * var(--magic-number));
+}
+
+.diagonal-content {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+    padding-bottom: calc(var(--skew-padding) * 0.5);
+}
+
+.diagonal-content__block {
+    width: 100%;
+    line-height: 25px;
+    padding: 10px;
+    color: var(--ligth-gray);
+    background: var(--dark-opacity);
+}
+
+.diagonal-content__block ul {
+    list-style: none;
+}
+
+.diagonal-content__block ul li::before {
+  content: "\2022";
+  color: #fd7070;
+  font-weight: 700;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+.diagonal-content__block li {
+    margin-bottom: 10px;
+}
+
+.diagonal-content__block:nth-child(1) {
+    transform: translateY(calc(var(--skew-padding) * 0));
+}
+
+.diagonal-content__block:nth-child(2) {
+    transform: translateY(calc(var(--skew-padding) * 0.5));
+}
+
+.diagonal-section-small .diagonal-content__block {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.diagonal-content__block-title {
+    /*background-image: linear-gradient(170deg, #ff1f1f, #82ebff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;*/
+
+    font-weight: 700;
+    padding: 10px 10px 40px 40px;
+    font-size: 25px;
+}
+
+.diagonal-section .container {
+    padding: 0;
+}
+
+.diagonal-section-small {
+    position: relative;
+}
+
+.diagonal-section-small:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background: #292929;
+    transform: skewY(var(--angle));
+}
+
+.our-services-title {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: calc(4vw + 35px);
+}

@@ -1,0 +1,102 @@
+.cart-table-container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 30px 0;
+}
+
+.cart-table-container > div {
+    padding: 0 8px;
+    background-color: rgba(230, 230, 250, 0.6);
+    border-radius: 3px;
+}
+
+#table-body tr:not(:last-child) {
+    border-bottom: 1px solid rgba(230, 230, 250, 0.8);
+}
+
+th {
+    text-transform: uppercase;
+    border-bottom: 3px solid rgba(180, 56, 103, 0.4);
+}
+
+td,
+th {
+    padding: 10px;
+    text-align: center;
+}
+
+/* name column in table */
+tr td:first-child,
+th:first-child {
+    text-align: start;
+}
+
+/* Last row with "РАЗОМ: " */
+table tr:last-child td {
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: end;
+    color: var(--main-color);
+}
+
+.change-quantity-group {
+    display: inline-flex;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.quantity-text {
+    max-width: 1.5rem;
+    border: none;
+    text-align: center;
+}
+
+.table-btn {
+    border: none;
+    overflow: hidden;
+    background-color: var(--green);
+    cursor: pointer;
+    line-height: 25px;
+}
+
+.table-btn:hover {
+    filter: brightness(0.9);
+}
+
+.table-btn * {
+    color: aliceblue;
+}
+
+.change-quantity-group button {
+    background-color: var(--green);
+}
+
+.delete-item {
+    border-radius: 4px;
+    background-color: var(--red);
+}
+
+.quantity-text {
+    padding: 3px;
+}
+
+.empty-cart-message {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.shadow {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+@media (max-width: 600px) {
+    table * {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 400px) {
+    table * {
+        font-size: 0.8rem;
+    }
+}

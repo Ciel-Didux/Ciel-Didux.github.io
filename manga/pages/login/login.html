@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ua">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--css-->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link href="/css/fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet">
+
+    <title>ЯМанга — інтернет-магазин манги</title>
+</head>
+
+<body>
+    <header>
+        <!--canvas id="sakura"></canvas-->
+        <div class="bg"></div>
+        <div class="header-bar">
+            <div class="container">
+                <div class="logo-block">
+                    <img src="/image/logo.png" alt="logo">
+                </div>
+                <div class="phone-block">
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <a class="phone-number" href="tel:096 487 15 92"><b>096 487 15 92</b></a>
+                    </div>
+                    <small>з 09:00 до 18:00 по будням</small>
+                </div>
+                <div class="cart-block">
+                    <li class="account-text">
+                        <a class="profile-link" href="/pages/login/login.html"><i class="fa fa-user"></i> Особистий кабінет</a>
+                    </li>
+                    <li>
+                        <div id="cart">
+                            <a href="/pages/cart/cart.html">
+                                <i data-loading-text="Завантаження..." class="fa fa-shopping-bag">
+                                    <span id="cart-total">0</span>
+                                </i>
+                            </a>
+                        </div>
+                    </li>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-menu-container">
+            <div class="container">
+                <nav class="navbar-menu">
+                    <li>
+                        <a href="/index.html">Головна</a>
+                    </li>
+                    <li>
+                        <a href="#">Про нас</a>
+                    </li>
+                    <li>
+                        <a href="#">Новини</a>
+                    </li>
+                    <li>
+                        <a href="#">Манга</a>
+                    </li>
+                    <li>
+                        <a href="#">Жанри</a>
+                    </li>
+                    <li>
+                        <a href="#">Почитати про жанри</a>
+                    </li>
+                    <li>
+                        <a href="#">Технічна підтримка</a>
+                    </li>
+                </nav>
+                <nav class="mobile-navbar-menu navbar-menu">
+                    <span>Категорії</span>
+                    <button type="button" class="navbar-toggle"><i class="fa fa-bars"></i></button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="bg"></div>
+        <div class="container">
+            <section class="authorization">
+                <div class="title-block">Авторизація</div>
+                <div class="autorization-container">
+                    <div>
+                        <h2>Новий клієнт</h2>
+                        <p><strong>Реєстрація</strong></p>
+                        <p>Створення облікового запису допоможе купувати швидше. Ви зможете контролювати стан замовлення, а також переглядати замовлення зроблені раніше. Ви зможете накопичувати призові бали і отримувати знижкові купони. <br>А постійним покупцям ми пропонуємо гнучку систему знижок і персональне обслуговування.<br></p>
+                        <a class="btn" href="/pages/register/register.html">Продовжити</a>
+                    </div>
+                    <div>
+                        <h2>Зареєстрований клієнт</h2>
+                        <p><strong>Увійти в Особистий Кабінет</strong></p>
+                        <form action="" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label for="input-email">E-Mail</label>
+                                <input type="text" name="email" value="" placeholder="E-Mail" id="input-email" class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="input-password">Пароль</label>
+                                <input type="password" name="password" value="" placeholder="Пароль" id="input-password" class="form-input">
+                                <a class="link-in-text" href="#">Забули пароль?</a>
+                            </div>
+                            <input type="submit" value="Увійти" class="btn">
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="info-block">
+                <h5>Інформація</h5>
+                <ul>
+                    <li><a href="#">Про нас</a></li>
+                    <li><a href="#">Оплата і доставка</a></li>
+                    <li><a href="#">Угода користувача</a></li>
+                    <li><a href="#">Технічна підтримка</a></li>
+                </ul>
+            </div>
+            <div class="contact-block">
+                <h5>Контакти</h5>
+                <a href="#"><span class="contact-icon fab fa-instagram"></span></a>
+                <a href="#"><span class="contact-icon fab fa-viber"></span></a>
+                <ul>
+                    <li>
+                        <div class="phone-block">
+                            <div>
+                                <i class="fa fa-phone"></i>
+                                <a class="phone-number" href="tel:096 487 15 92"><b>096 487 15 92</b></a>
+                            </div>
+                            <small>з 09:00 до 18:00 по будням</small>
+                        </div>
+                    </li>
+                    <li><a href="#">dimstrospheral@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!--js-->
+
+    <script src="/js/jquery.js"></script>
+    <script src="/js/addToCart.js"></script>
+    <script src="index.js"></script>
+
+</body></html>
